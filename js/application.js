@@ -73,7 +73,9 @@ function loadHeatMap() {
       beforeSend: function(request) {
         request.setRequestHeader('X-App-Token', APP_TOKEN);
 
-        $('form').prop('disabled', true);
+        $('#map-wrapper').spin({
+          color: '#828282'
+        });
       }
     })
     .done(function(response) {
@@ -113,11 +115,15 @@ function loadHeatMap() {
         popupLayer.addLayer(marker);
 
         heatLayer.addLatLng(latLng);
-      }
 
-      $('form').prop('disabled', false);
+        $('#map-wrapper').spin(false);
+      }
     });
 }
+
+$('#map-wrapper').spin({
+  color: '#828282'
+});
 
 $.get(CATEGORY_ENDPOINT)
   .done(function(response) {
