@@ -9,6 +9,8 @@
     "jquery": "~2.2.0",
     "bootstrap": "~3.3.6",
     "bootstrap-select": "~1.9.3",
-    "clockpicker": "~0.0.7"
+    "clockpicker": "~0.0.7",
+    "moment": "~2.11.0",
+    "spin.js": "~2.3.2"
   }
 }

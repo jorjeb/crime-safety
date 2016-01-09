@@ -42,7 +42,7 @@
             <div class="form-group">
               <label for="time">Time</label>
               <div class="input-group clockpicker" data-placement="right" data-align="top" data-autoclose="true">
-                <input id="time" type="text" class="form-control" name="time" value="" readonly>
+                <input id="time" type="text" class="form-control" name="time" value="">
                 <span class="input-group-addon">
                   <span class="glyphicon glyphicon-time"></span>
                 </span>
@@ -50,6 +50,18 @@
             </div>
             <div class="form-group">
               <button id="view" type="button" class="btn btn-primary">View</button>
+            </div>
+          </form>
+          <form>
+            <div class="checkbox">
+              <label>
+                <input id="show-heat-map-layer" type="checkbox" checked> Show heat map layer
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input id="show-markers" type="checkbox"> Show markers
+              </label>
             </div>
           </form>
         </div>  
@@ -60,6 +72,7 @@
     <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="bower_components/bootstrap-select/dist/js/i18n/defaults-en_US.js"></script>
     <script src="bower_components/clockpicker/dist/bootstrap-clockpicker.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
     <script src="https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js"></script>
     <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-heat/v0.1.3/leaflet-heat.js"></script>
     <script src="js/application.js"></script>
