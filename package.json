@@ -1,0 +1,9 @@
+{
+  "name": "crime-safety",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorjeb/crime-safety.git"
+  },
+  "author": "Jorje Jun Barrera",
+  "homepage": "https://github.com/jorjeb/crime-safety#readme"
+}
